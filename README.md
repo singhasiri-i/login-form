@@ -2,7 +2,7 @@
 
 > **Language**: HTML, CSS
 
-> **Description**: Create a responsive website login form.
+> **Description**: Create a responsive webpage login form.
 
 > **Project preview**:
 
