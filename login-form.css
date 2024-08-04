@@ -1,0 +1,126 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    /* ถ้าของในกล่องลูกกว้างเกินขนาดกล่องแม่ ให้มันปรับให้เท่ากล่องแม่ */
+    box-sizing: border-box;
+}
+h1 {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* เพื่อให้สามารถ scroll mouse ขึ้นลงได้
+    นอกจากกำหนด min-height=100vh แล้ว
+    ยังต้องกำหนด margin bottom ให้มากๆ ด้วย */
+    margin: -10px 0 50px;
+    background-color: #f6f5f7;
+}
+.container {
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    /* ใช้อิงให้กล่องลูกอยู่ใต้กล่องนี้ โดยกล่องลูกต้องกำหนด position เป็น absolute ด้วย */
+    position: relative;
+    /* ซ่อนขอบที่เกินจากตรงมนๆ ของกล่องลูกไม่ให้เกินจากกล่องแม่ */
+    overflow: hidden;
+}
+.signin {
+    left: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+}
+.signup {
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #FF445C;
+}
+#signin-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    width: 100%;
+    height: 100%;
+}
+#signin-form>span {
+    font-size: 12px;
+}
+#signin-form>input {
+    margin: 8px 0;
+    padding: 12px 15px;
+    border: none;
+    background-color: #EEEEEE;
+    width: 100%;
+}
+a {
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+button {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 45px;
+    border-radius: 20px;
+    background-color: #FF4B2A;
+    border: 1px solid #FF4B2A;
+}
+.signup-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+    text-align: center;
+}
+.signup-btn {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+footer {
+    height: 40px;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    line-height: 20px;
+}
+footer p {
+    margin: 10px 0;
+}
+button:active {
+    padding: 11px 42px;
+    margin: 1px 1px;
+    font-size: 11px;
+    transition: all 0.2s ease-out;
+}
